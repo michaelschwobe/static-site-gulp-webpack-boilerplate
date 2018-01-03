@@ -1,0 +1,60 @@
+/*! Main stylesheet */
+//------------------------------------------------------------------------------
+// Configuration (setup/settings: functions, mixins, variables)
+//------------------------------------------------------------------------------
+
+// include-media (vendor functions and mixins, MUST come before variables)
+@import 'include-media/dist/include-media';
+
+// Variables (typography, colors, layout)
+$base-font-family: sans-serif !default;
+
+//------------------------------------------------------------------------------
+// Global (reset, reboot unclassed selectors)
+//------------------------------------------------------------------------------
+
+// Reset (vendor module)
+@import 'normalize.css/normalize';
+
+// Reboot (base, elements, media, tables, forms)
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $base-font-family;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+//------------------------------------------------------------------------------
+// Objects (purely structural reusable objects)
+//------------------------------------------------------------------------------
+
+// Grid system.
+@import 'flexboxgrid/dist/flexboxgrid';
+
+//------------------------------------------------------------------------------
+// Components (designed reusable patterns)
+//------------------------------------------------------------------------------
+
+.page-title {
+  @include media('>=tablet') {
+    font-style: italic;
+  }
+}
+
+//------------------------------------------------------------------------------
+// Utilities (helpers classes, cross-browser bugs, print styles)
+//------------------------------------------------------------------------------
+
+// etc...

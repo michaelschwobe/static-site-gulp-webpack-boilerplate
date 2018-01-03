@@ -1,0 +1,61 @@
+{
+  "name": "static-site-gulp-webpack-boilerplate",
+  "description": "Drop-in Gulp and Webpack tasks for static site development.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Michael Schwobe <mschwobe@gmail.com> (http://michaelschwobe.com)",
+  "repository": "michaelschwobe/static-site-gulp-webpack-boilerplate",
+  "bugs": {
+    "url": "https://github.com/michaelschwobe/static-site-gulp-webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/michaelschwobe/static-site-gulp-webpack-boilerplate#readme",
+  "keywords": [
+    "autoprefixer",
+    "babel",
+    "boilerplate",
+    "browser-sync",
+    "clean-css",
+    "gulp",
+    "imagemin",
+    "sass",
+    "webpack"
+  ],
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "NODE_ENV=production gulp",
+    "build:views": "NODE_ENV=production gulp views",
+    "build:media": "NODE_ENV=production gulp media",
+    "build:styles": "NODE_ENV=production gulp styles",
+    "build:scripts": "NODE_ENV=production gulp scripts",
+    "clean": "gulp clean"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.1",
+    "include-media": "^1.4.9",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-noop": "^1.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.3",
+    "run-sequence": "^2.2.0",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^3.10.0",
+    "webpack-stream": "^4.0.0"
+  }
+}
